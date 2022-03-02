@@ -13,6 +13,17 @@ def lineNotifyMessage(token, msg):
     r = requests.post("https://notify-api.line.me/api/notify", headers = headers, params = payload)
     return r.status_code
 
+##打包用的附加文件出問題解決方法
+##參考網址:https://zhuanlan.zhihu.com/p/130328237
+# def resource_path(relative_path):
+#     """獲取程序中所需文件資源的絕對路徑"""
+#     try:
+#         # PyInstaller創建臨時文件夾，將路徑儲存於_MEIPASS
+#         base_path = sys._MEIPASS
+#     except Exception:
+#         base_path = os.path.abspath(".")
+
+#     return os.path.join(base_path, relative_path)
 
 # if __name__ == "__main__":
 #   token = 'line notify的權證'

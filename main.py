@@ -11,6 +11,7 @@ timeString = "\n偵測時間 : " + str(now.strftime("%Y/%m/%d %H:%M:%S"))#Python
 #讀取config設定檔內的值
 config = configparser.ConfigParser()
 config.read('config.ini',encoding="utf-8-sig") # encoding="utf-8-sig" 可以解決windows因為BOM(byte order mark位元組標記)讀取中文時顯示亂碼的問題
+# config.read((resource_path('config.ini')),encoding="utf-8-sig") # resource_path 打包用的附加文件出問題解決方法
 token = config.get('line-notify', 'notify_token') # 在config.ini修改成你的line notify token
 whatplace = str(config.get('line-notify', 'whatplace'))
 
