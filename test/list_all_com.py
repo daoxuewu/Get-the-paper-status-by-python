@@ -1,4 +1,4 @@
-#列出所有的序列埠和可用但尚未被使用的序列埠
+#這個程式會列出所有的序列埠和可用但尚未被使用的序列埠
 #我是看下方連結(stackoverflow)的程式碼想出其他的部分，讚嘆網友!
 import serial.tools.list_ports
 import sys

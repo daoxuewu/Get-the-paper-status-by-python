@@ -1,4 +1,4 @@
-from ser_easy import paper_status
+from ser import paper_status
 p = "印表機紙捲狀態:"
 if paper_status == "12":
     print(p+"紙捲狀態正常")

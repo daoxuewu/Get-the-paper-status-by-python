@@ -4,7 +4,7 @@ from line_notify_connect import lineNotifyMessage
 import configparser #配置文件解析器
 
 config = configparser.ConfigParser()
-config.read('config.ini',encoding="utf-8-sig") # encoding="utf-8-sig" 可以解決windows因為BOM(byte order mark位元組標記)中文顯示亂碼的問題
+config.read('config.ini',encoding="utf-8-sig") # encoding="utf-8-sig" 可以解決windows因為BOM(byte order mark位元組標記)讀取中文時顯示亂碼的問題
 token = config.get('line-notify', 'notify_token') # 在config.ini修改成你的line notify token
 whatplace = str(config.get('line-notify', 'whatplace'))
 
