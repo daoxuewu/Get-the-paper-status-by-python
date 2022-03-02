@@ -4,9 +4,11 @@ from line_notify_connect import lineNotifyMessage
 import configparser #配置文件解析器
 import datetime     
 
+#增加實時當地時間
 now = datetime.datetime.now()
 timeString = "\n偵測時間 : " + str(now.strftime("%Y-%m-%d %H:%M:%S"))#Python time strftime()函數用於格式化時間
 
+#讀取config設定檔內的值
 config = configparser.ConfigParser()
 config.read('config.ini',encoding="utf-8-sig") # encoding="utf-8-sig" 可以解決windows因為BOM(byte order mark位元組標記)讀取中文時顯示亂碼的問題
 token = config.get('line-notify', 'notify_token') # 在config.ini修改成你的line notify token
