@@ -1,4 +1,5 @@
 import requests
+#如果 terminal 訊息顯示尚未安裝 requests模組 ，請在 terminal 終端機輸入以下指令 pip install requests ，安裝完後就可以順利執行了
 
 # 定義連接 Line notify 的函式
 def lineNotifyMessage(token, msg):

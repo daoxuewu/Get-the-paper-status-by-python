@@ -1,5 +1,5 @@
 from ser import paper_status
-p = "印表機紙捲狀態:"
+p = "印表機狀態: "
 if paper_status == "12":
     print(p+"紙捲狀態正常")
 elif paper_status == "1e":
