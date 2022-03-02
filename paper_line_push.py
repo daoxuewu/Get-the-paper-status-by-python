@@ -6,7 +6,7 @@ import datetime
 
 #增加實時當地時間
 now = datetime.datetime.now()
-timeString = "\n偵測時間 : " + str(now.strftime("%Y-%m-%d %H:%M:%S"))#Python time strftime()函數用於格式化時間
+timeString = "\n偵測時間 : " + str(now.strftime("%Y/%m/%d %H:%M:%S"))#Python time strftime()函數用於格式化時間
 
 #讀取config設定檔內的值
 config = configparser.ConfigParser()
@@ -14,7 +14,7 @@ config.read('config.ini',encoding="utf-8-sig") # encoding="utf-8-sig" 可以解�
 token = config.get('line-notify', 'notify_token') # 在config.ini修改成你的line notify token
 whatplace = str(config.get('line-notify', 'whatplace'))
 
-p = whatplace + "印表機狀態 : "
+p = "\n" + whatplace + "\n印表機狀態 : "
 
 if paper_status == "12":
     message = p + '紙捲狀態正常' + timeString
