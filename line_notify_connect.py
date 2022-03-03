@@ -2,7 +2,8 @@ import requests
 #如果 terminal 訊息顯示尚未安裝 requests模組 ，請在 terminal 終端機輸入以下指令 pip install requests ，安裝完後就可以順利執行了
 
 # 定義連接 Line notify 的函式
-#reference : https://notify-bot.line.me/doc/en/
+# line notify官方文件:https://notify-bot.line.me/doc/en/
+# IT邦幫忙 威利斯:https://ithelp.ithome.com.tw/articles/10234115
 def lineNotifyMessage(token, msg):
 
     headers = {
@@ -15,10 +16,9 @@ def lineNotifyMessage(token, msg):
     return r.status_code
 
 ##用 auto-py-to-exe 把專案打包成一個exe檔，附加文件出問題解決方法附加文件出問題解決方法
-##reference:
-## 官方文件:https://nitratine.net/blog/post/issues-when-using-auto-py-to-exe/?utm_source=auto_py_to_exe&utm_medium=application_link&utm_campaign=auto_py_to_exe_help&utm_content=top
+## auto-py-to-exe官方文件:https://nitratine.net/blog/post/issues-when-using-auto-py-to-exe/?utm_source=auto_py_to_exe&utm_medium=application_link&utm_campaign=auto_py_to_exe_help&utm_content=top
 ## stackoverflow:https://stackoverflow.com/questions/7674790/bundling-data-files-with-pyinstaller-onefile/13790741#13790741
-## 簡體中文教學:https://zhuanlan.zhihu.com/p/130328237
+## auto-py-to-exe簡體中文教學:https://zhuanlan.zhihu.com/p/130328237
 # def resource_path(relative_path):
 #     """獲取程序中所需文件資源的絕對路徑"""
 #     try:
