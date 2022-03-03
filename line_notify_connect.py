@@ -14,8 +14,11 @@ def lineNotifyMessage(token, msg):
     r = requests.post("https://notify-api.line.me/api/notify", headers = headers, params = payload)
     return r.status_code
 
-##打包用的附加文件出問題解決方法
-##reference:https://zhuanlan.zhihu.com/p/130328237
+##打包用 auto-py-to-exe 附加文件出問題解決方法
+##reference:
+## 官方文件:https://nitratine.net/blog/post/issues-when-using-auto-py-to-exe/?utm_source=auto_py_to_exe&utm_medium=application_link&utm_campaign=auto_py_to_exe_help&utm_content=top
+## stackoverflow:https://stackoverflow.com/questions/7674790/bundling-data-files-with-pyinstaller-onefile/13790741#13790741
+## 簡體中文教學:https://zhuanlan.zhihu.com/p/130328237
 # def resource_path(relative_path):
 #     """獲取程序中所需文件資源的絕對路徑"""
 #     try:
@@ -25,6 +28,7 @@ def lineNotifyMessage(token, msg):
 #         base_path = os.path.abspath(".")
 
 #     return os.path.join(base_path, relative_path)
+
 
 # if __name__ == "__main__":
 #   token = 'line notify的權證'
