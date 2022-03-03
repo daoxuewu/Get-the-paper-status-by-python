@@ -2,6 +2,7 @@ import requests
 #如果 terminal 訊息顯示尚未安裝 requests模組 ，請在 terminal 終端機輸入以下指令 pip install requests ，安裝完後就可以順利執行了
 
 # 定義連接 Line notify 的函式
+#reference : https://notify-bot.line.me/doc/en/
 def lineNotifyMessage(token, msg):
 
     headers = {
@@ -14,7 +15,7 @@ def lineNotifyMessage(token, msg):
     return r.status_code
 
 ##打包用的附加文件出問題解決方法
-##參考網址:https://zhuanlan.zhihu.com/p/130328237
+##reference:https://zhuanlan.zhihu.com/p/130328237
 # def resource_path(relative_path):
 #     """獲取程序中所需文件資源的絕對路徑"""
 #     try:
@@ -30,4 +31,3 @@ def lineNotifyMessage(token, msg):
 #   message = '基本功能測試'
 #   lineNotifyMessage(token, message)
 
-#reference : https://notify-bot.line.me/doc/en/
