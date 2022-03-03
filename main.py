@@ -2,7 +2,7 @@ from ser_easy import paper_status
 from line_notify_connect import lineNotifyMessage
 
 import configparser #配置文件解析器
-import datetime     
+import datetime     #時間模組
 
 #增加實時當地時間
 now = datetime.datetime.now()
