@@ -1,3 +1,4 @@
+#這是和印表機進行串列通訊的程式
 import serial   
 import serial.tools.list_ports
 import sys

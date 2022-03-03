@@ -1,13 +1,14 @@
+#把接收到的狀態打印出來
 from ser import paper_status
-p = "印表機狀態: "
+p = "printer status: "
 if paper_status == "12":
-    print(p+"紙捲狀態正常")
+    print(p+"paper adequate")
 elif paper_status == "1e":
-    print(p+"下方探測器缺紙")
+    print(p+"Paper roll end detected by paper roll sensor")
 elif paper_status == "72":
-    print(p+"上方探測器缺紙")
+    print(p+"Paper near-end is detected by the paper roll near-end sensor.")
 elif paper_status == "7e":
-    print(p+"上下都沒紙了")
+    print(p+"both sensor detected paper roll end")
 else:
-    print("其他未設定狀態:",paper_status)
+    print("other status:",paper_status)
     
