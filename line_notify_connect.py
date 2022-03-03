@@ -14,7 +14,7 @@ def lineNotifyMessage(token, msg):
     r = requests.post("https://notify-api.line.me/api/notify", headers = headers, params = payload)
     return r.status_code
 
-##打包用 auto-py-to-exe 附加文件出問題解決方法
+##用 auto-py-to-exe 把專案打包成一個exe檔，附加文件出問題解決方法附加文件出問題解決方法
 ##reference:
 ## 官方文件:https://nitratine.net/blog/post/issues-when-using-auto-py-to-exe/?utm_source=auto_py_to_exe&utm_medium=application_link&utm_campaign=auto_py_to_exe_help&utm_content=top
 ## stackoverflow:https://stackoverflow.com/questions/7674790/bundling-data-files-with-pyinstaller-onefile/13790741#13790741

@@ -10,8 +10,9 @@ timeString = "\n偵測時間 : " + str(now.strftime("%Y/%m/%d %H:%M:%S"))#Python
 
 #讀取config設定檔內的值
 config = configparser.ConfigParser()
+#打包成exe檔後放工作排程器執行時若出現 configparser.nosectionerror 錯誤，解決方法是read改成讀絕對路徑
 config.read('config.ini',encoding="utf-8-sig") # encoding="utf-8-sig" 可以解決windows因為BOM(byte order mark位元組標記)讀取中文時顯示亂碼的問題
-# config.read((resource_path('config.ini')),encoding="utf-8-sig") # resource_path 打包用的附加文件出問題解決方法
+# config.read((resource_path('config.ini')),encoding="utf-8-sig") # resource_path方法 用 auto-py-to-exe 把專案打包成一個exe檔，附加文件出問題解決方法附加文件出問題解決方法
 token = config.get('default', 'notify_token') # 在config.ini修改成你的line notify token
 whatplace = str(config.get('default', 'whatplace'))
 
