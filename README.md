@@ -20,4 +20,4 @@ Detailed information can be found in [pySerial installation](https://github.com/
 - APPOSTAR KPM-2520
 
 ## License
-Mit License Copyright (c) 2022 Daoxue Wu
+>Mit License Copyright (c) 2022 Daoxue Wu
