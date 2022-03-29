@@ -10,7 +10,6 @@ Using [pySerial](https://pypi.org/project/pyserial/) to get the paper status of 
 ```
 pip install pyserial
 ```
-should work for most users.
 
 Detailed information can be found in [pySerial installation](https://github.com/pyserial/pyserial/blob/master/documentation/pyserial.rst#installation).
 
