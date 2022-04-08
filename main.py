@@ -35,7 +35,7 @@ printerinfo = "\n" + whatplace + "\n印表機狀態 : "
 now = datetime.datetime.now()
 timeString = "\n偵測時間 : " + str(now.strftime("%Y/%m/%d %H:%M:%S"))#Python time strftime()函數用於格式化時間
 
-#印表機回傳ascii碼轉成line訊息
+#印表機回傳hex轉成line訊息
 if paper_status == "12":
     message = printerinfo + '紙捲狀態正常' + timeString
     lineNotifyMessage(token, message)
