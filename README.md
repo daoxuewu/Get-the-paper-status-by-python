@@ -6,7 +6,7 @@
 
 Using [pySerial](https://pypi.org/project/pyserial/) to get the paper status of escpos printers.
 
-## Installation
+## 需求套件 / Requirement
 This script requires pyserial library. You can install it easily by:
 ```
 pip install pyserial
