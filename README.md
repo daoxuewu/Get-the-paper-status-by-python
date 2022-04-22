@@ -14,6 +14,17 @@ pip install pyserial
 
 Detailed information can be found in [pySerial installation](https://github.com/pyserial/pyserial/blob/master/documentation/pyserial.rst#installation).
 
+## ESC/POS 指令介紹
+ESC/POS 指令可以傳送三種格式來和印表機進行序列通訊，分別是ASCII、十六進制(Hex)、十進制(Decimal)，照著指令可以進一步去做到控制印表機進行列印、查詢印表機的狀態等等的動作，這次要做的內容是查詢印表機的紙捲狀態(有兩個指令可以查看)，介紹如下: 
+
+第一個是 DLE EOT n (實時查看) 
+
+![image](picture or gif url) 
+
+n = 4 是傳輸紙卷感測器狀態 
+
+![image](picture or gif url)
+
 ## References
 - pySerial’s documentation : https://pyserial.readthedocs.io/en/latest/
 - ESC/POS Command Set : https://aures-support.com/DATA/drivers/Imprimantes/Commande%20ESCPOS.pdf
