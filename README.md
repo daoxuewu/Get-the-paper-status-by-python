@@ -19,11 +19,11 @@ ESC/POS 指令可以傳送三種格式來和印表機進行序列通訊，分別
 
 第一個是 DLE EOT n (實時查看) 
 
-![image](picture or gif url) 
+![image](https://github.com/daoxuewu/Get-the-paper-status-by-python/blob/main/img/DLE%20EOT%20n.png) 
 
 n = 4 是傳輸紙卷感測器狀態 
 
-![image](picture or gif url)
+![image](https://github.com/daoxuewu/Get-the-paper-status-by-python/blob/main/img/n%3D4.png)
 
 ## References
 - pySerial’s documentation : https://pyserial.readthedocs.io/en/latest/
