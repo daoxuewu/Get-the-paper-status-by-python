@@ -23,7 +23,7 @@ ESC/POS 指令可以傳送三種格式來和印表機進行序列通訊，分別
 
 n = 4 是傳輸紙卷感測器狀態 
 
-![image](https://github.com/daoxuewu/Get-the-paper-status-by-python/blob/main/img/n%3D4.png)
+![image](https://github.com/daoxuewu/Get-the-paper-status-by-python/blob/main/img/n_4.png)
 
 ## References
 - pySerial’s documentation : https://pyserial.readthedocs.io/en/latest/
