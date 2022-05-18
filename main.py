@@ -1,7 +1,6 @@
 from line_notify_connect import lineNotifyMessage
 
 import serial
-import serial.tools.list_ports
 
 import configparser #配置文件解析器
 import datetime     #時間模組
