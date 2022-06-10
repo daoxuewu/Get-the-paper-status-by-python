@@ -9,7 +9,7 @@ serialPort = serial.Serial(
     port="COM2",      #請自行視連接方式修改參數
     baudrate=115200,  #設定鮑率(每秒鐘傳符號率)
     bytesize=8,       #data type 8bit
-    parity="N",       #同位檢查(一般不使用)
+    parity="N",       #同位檢查(一般預設為無"N"，不使用)
     stopbits=1,       #停止位：是在每個位元組傳輸之後傳送的，它用來幫助接受訊號方硬體重同步。
     timeout=1.00)   
 
