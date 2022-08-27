@@ -25,6 +25,12 @@ n = 4 是傳輸紙卷感測器狀態
 
 ![image](https://github.com/daoxuewu/Get-the-paper-status-by-python/blob/main/img/n_4.png)
 
+第二個是 GS r n
+
+![image](https://github.com/daoxuewu/Get-the-paper-status-by-python/blob/main/img/GS_r_n.png)
+
+![image](https://github.com/daoxuewu/Get-the-paper-status-by-python/blob/main/img/n_1_49.png)
+
 ## References
 - pySerial’s documentation : https://pyserial.readthedocs.io/en/latest/
 - ESC/POS Command Set : https://aures-support.com/DATA/drivers/Imprimantes/Commande%20ESCPOS.pdf
