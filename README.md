@@ -35,6 +35,7 @@ n = 4 是傳輸紙卷感測器狀態
 - pySerial’s documentation : https://pyserial.readthedocs.io/en/latest/
 - ESC/POS Command Set : https://aures-support.com/DATA/drivers/Imprimantes/Commande%20ESCPOS.pdf
 - EPSON : https://reference.epson-biz.com/modules/ref_escpos/index.php
+- android 控制POS機圖文打印 : https://blog.csdn.net/sdvch/article/details/45096041
 
 ## Tested printers
 - APPOSTAR KPM-2520
